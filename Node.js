@@ -1,7 +1,7 @@
 const express = require('express');
 const Redis = require('ioredis');
 const app = express();
-const redis = new Redis('redis://:<password>@<host>:<port>');
+const redis = new Redis('rediss://red-cpda5b7sc6pc738p2qbg:DFrBhggQ8HyQBh2BcktBdCguXqPNcy9q@oregon-redis.render.com:6379');
 
 app.get('/set/:key/:value', async (req, res) => {
   const { key, value } = req.params;
